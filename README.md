@@ -1,7 +1,10 @@
 
 This is an encoder library which is compliant to different 
 
-quadrature encoder brands please feel free to use it.
+quadrature encoder brands . The software libraries both ported to C++ and 
+Python .
+
+Please feel free to use it.
 
 The library use to detect acceleration, rpm, speed and direction
 
