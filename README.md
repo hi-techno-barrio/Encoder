@@ -8,8 +8,6 @@ The library use to detect acceleration, rpm, speed and direction
 and was tested to be efficient in RP2040
 
 Christopher Coballes
-
 Hi-Techno Barrio
-
 Bicol.Philippines
 
