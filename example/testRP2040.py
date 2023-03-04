@@ -1,3 +1,5 @@
+
+
 /*
 In this example code, we create an instance of the Encoder class using GPIO pins A = 2, B = 3, Z = 4, and I = 5, 
 and then call the public methods get_rpm, get_velocity, get_acceleration, and get_direction to calculate and print
