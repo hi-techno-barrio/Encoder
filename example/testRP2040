@@ -1,0 +1,20 @@
+#include "pico/stdlib.h"
+#include "hardware/gpio.h"
+#include "hardware/irq.h"
+#include "hardware/timer.h"
+#include "encoder.h"
+
+int main() {
+    Encoder encoder(2, 3, 4, 5);  // Initialize the encoder with GPIO pins A = 2, B = 3, Z = 4, and I = 5
+
+    while (true) {
+        double rpm = encoder.get_rpm();
+        double velocity = encoder.get_velocity();
+        double acceleration = encoder.get_acceleration();
+        char direction = encoder.get_direction();
+        printf("RPM: %.2f, Velocity: %.2f %c/s, Acceleration: %.2f %c/s^2, Direction: %c\n", rpm, velocity, direction, acceleration, direction, direction);
+        sleep_ms(1000);
+    }
+
+    return 0;
+}
