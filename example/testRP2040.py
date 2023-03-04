@@ -3,7 +3,6 @@ In this example code, we create an instance of the Encoder class using GPIO pins
 and then call the public methods get_rpm, get_velocity, get_acceleration, and get_direction to calculate and print
 the motor's RPM, velocity, acceleration, and direction every 1 second using the print function. The utime.sleep_ms
 function is used to wait for 1 second between each measurement.
-
 */
 
 from machine import Pin
